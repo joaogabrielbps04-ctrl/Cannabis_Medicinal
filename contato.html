@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Cannabis Medicinal</title>
+  <style>
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4fff4;
+      color: #0b3d2e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #065f46;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #047857;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid #047857;
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.3s ease;
+      font-size: 15px;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #10b981;
+      box-shadow: 0 0 5px rgba(16,185,129,0.4);
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .radio-group, .checkbox-group {
+      margin: 10px 0;
+    }
+
+    .radio-group label, .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #047857;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #065f46;
+    }
+
+    footer {
+      background-color: #065f46;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>Cannabis Medicinal </header>
+
+  <div class="container">
+    <h2>Entre em Contato</h2>
+    <p style="text-align:center;">Preencha o formulário abaixo e entraremos em contato com você.</p>
+
+    <form>
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+
+      <label for="idade">Sua Idade</label>
+      <input type="number" id="idade" name="idade" min="1" placeholder="Ex: 25">
+
+      <label>Qual seu interesse?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="interesse" value="Recreativo"> Recreativo</label>
+        <label><input type="radio" name="interesse" value="Saúde"> Saúde</label>
+      </div>
+
+      <label>Como conheceu nosso site?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="origem" value="Amigos"> Amigos</label>
+        <label><input type="checkbox" name="origem" value="Instagram"> Instagram</label>
+        <label><input type="checkbox" name="origem" value="Outro"> Outro</label>
+      </div>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+
+      <div class="buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+<a href="../PaginaPrincipal/index.html">Voltar</a>
+  <footer>
+    © 2025 Cannabis Medicinal — Todos os direitos reservados 
+  </footer>
+</body>
+</html>
